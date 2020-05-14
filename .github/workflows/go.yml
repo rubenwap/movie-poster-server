@@ -26,6 +26,9 @@ jobs:
       run: go mod download
 
     - name: Test
+      env: # Or as an environment variable
+        OMDB_URL: ${{ secrets.OMDB_URL }}
+        OMDB_KEY: ${{ secrets.OMDB_KEY }}
       run: go test -v .
 
     - name: Build

@@ -12,4 +12,4 @@ and you will get the title, year of release and poster.
 
 ## Try it out in Heroku! 
 
-    https://movieposters.herokuapp.com/movie/Akira
+https://movieposters.herokuapp.com/movie/Akira
