@@ -99,5 +99,5 @@ func handlePoster(w http.ResponseWriter, r *http.Request) {
 func main() {
 	log.Println("Server running...")
 	http.HandleFunc("/movie/", handlePoster)
-	http.ListenAndServe("0.0.0.0:8080", nil)
+	http.ListenAndServe("0.0.0.0:" + os.Getenv("GOPORT"), nil)
 }
