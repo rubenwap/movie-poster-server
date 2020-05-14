@@ -97,7 +97,7 @@ func handlePoster(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	log.Fprintf("Server running in port %s...", os.Getenv("PORT"))
+	log.Println(fmt.Sprintf("Server running in port %s...", os.Getenv("PORT"))
 	http.HandleFunc("/movie/", handlePoster)
 	http.ListenAndServe(fmt.Sprintf(":%s", os.Getenv("PORT")), nil)
 }
