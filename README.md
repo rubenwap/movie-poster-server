@@ -6,6 +6,10 @@ Usage:
 
 Get it started compiling with `go build` and running the resulting executable. Then simply go to:
 
-    localhost:8000/movie/{title of the movie}
+    localhost:8080/movie/{title of the movie}
 
 and you will get the title, year of release and poster. 
+
+## Try it out in Heroku! 
+
+    https://movieposters.herokuapp.com/movie/Akira
